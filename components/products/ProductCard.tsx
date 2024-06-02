@@ -12,7 +12,7 @@ export default function ProductCard({product} : ProductCardProps) {
   const imagePath = getImagePath(product.image)
 
   return (
-    <div className="border bg-white">
+    <div className="border bg-white flex rounded-md overflow-hidden">
 
         <Image
             width={400}
@@ -21,9 +21,9 @@ export default function ProductCard({product} : ProductCardProps) {
             alt={`Imagen platillo ${product.name}`}
         />
 
-        <div className="p-5">
+        <div className="p-5 flex flex-col justify-center">
             <h3 className="text-2xl font-bold">{product.name}</h3>
-            <p className="mt-5 font-black text-4xl text-amber-500">
+            <p className="mt-5 font-black text-4xl">
               { formatCurrency( product.price )}
             </p>
             <AddProductButton 
