@@ -29,7 +29,7 @@ export default function OrderCard({ order }: OrderCardProps) {
                     </div>
                 ))}
                 <div className="flex items-center justify-between border-t border-gray-200 pt-4">
-                    <dt className="text-base font-medium text-gray-900">Total a Pagar:</dt>
+                    <dt className="text-base font-medium text-gray-900">Totala a Pagar:</dt>
                     <dd className="text-base font-medium text-gray-900">{formatCurrency(order.total)}</dd>
                 </div>
             </dl>
@@ -42,7 +42,7 @@ export default function OrderCard({ order }: OrderCardProps) {
                 />
                 <input
                     type="submit"
-                    className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
+                    className="rounded-lg bg-black hover:bg-zinc-800 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
                     value='Marcar Orden Completada'
                 />
             </form>

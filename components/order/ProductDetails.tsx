@@ -29,10 +29,10 @@ export default function ProductDetails({ item }: ProductDetailsProps) {
                         type="button"
                         onClick={() => removeItem(item.id)}
                     >
-                        <XCircleIcon className="text-red-600 h-8 w-8" />
+                        <XCircleIcon className="text-black h-8 w-8" />
                     </button>
                 </div>
-                <p className="text-2xl text-amber-500 font-black">
+                <p className="text-2xl text-black text-end font-black">
                     {formatCurrency(item.price)}
                 </p>
                 <div className="flex gap-5 px-10 py-2 bg-gray-100 w-fit rounded-lg">

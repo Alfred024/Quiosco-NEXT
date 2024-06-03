@@ -12,7 +12,7 @@ export default function ProductCard({product} : ProductCardProps) {
   const imagePath = getImagePath(product.image)
 
   return (
-    <div className="border bg-white flex rounded-md overflow-hidden">
+    <div className="border bg-white rounded-md overflow-hidden">
 
         <Image
             width={400}

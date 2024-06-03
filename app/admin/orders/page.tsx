@@ -17,7 +17,7 @@ export default function OrdersPage() {
   
   if(data) return (
     <>
-      <Heading>Administrar Ordenes</Heading>
+      <h1 className='text-2xl'>Administrar Ordenes</h1>
 
       {data.length ? (
         <div className="grid grid-cols-1 lg:grid-cols-2 2xl:grid-cols-3 gap-5 mt-5">

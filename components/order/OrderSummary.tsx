@@ -40,7 +40,7 @@ export default function OrderSummary() {
   }
 
   return (
-    <aside className="lg:h-screen lg:overflow-y-scroll md:w-64 lg:w-96 p-5">
+    <aside className="lg:h-screen lg:overflow-y-scroll p-5">
         <h1 className="text-4xl text-center font-black">Mi Pedido</h1>
 
         {order.length === 0 ? <p className="text-center my-10">El pedido esta vacio</p> : (
@@ -71,7 +71,7 @@ export default function OrderSummary() {
                   <input
                     type="submit"
                     className="py-2 rounded uppercase text-white bg-black w-full text-center cursor-pointer font-bold"
-                    value='Confirmar Pedido'
+                    value='Confirmar-pedido'
                   />
               </form>
           </div>

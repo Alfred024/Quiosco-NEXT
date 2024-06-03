@@ -13,7 +13,7 @@ export default function AddProductForm({children}: {children : React.ReactNode})
             name: formData.get('name'),
             price: formData.get('price'),
             categoryId: formData.get('categoryId'),
-            image: formData.get('image')
+            // image: formData.get('image')
         }
         const result = ProductSchema.safeParse(data)
         if(!result.success) {
@@ -44,7 +44,7 @@ export default function AddProductForm({children}: {children : React.ReactNode})
                 {children}
                 <input
                     type="submit"
-                    className="bg-indigo-600 hover:bg-indigo-800 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
+                    className=" bg-black hover:bg-slate-600 text-white w-full mt-5 p-3 uppercase font-bold cursor-pointer"
                     value='Registrar Producto'
                 />
             </form>

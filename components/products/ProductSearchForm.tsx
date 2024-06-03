@@ -28,13 +28,13 @@ export default function ProductSearchForm() {
             <input
                 type="text"
                 placeholder="Buscar Producto"
-                className="p-2 placeholder-gray-400 w-full"
+                className="p-2 placeholder-gray-400 w-full rounded-l-xl"
                 name="search"
             />
 
             <input
                 type="submit"
-                className="bg-indigo-600 p-2 uppercase text-white cursor-pointer"
+                className="bg-black p-2 uppercase text-white rounded-r-xl cursor-pointer"
                 value={'Buscar'}
             />
 
